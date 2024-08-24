@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Upashaya</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Home-section {
+            padding: 2rem;
+            /* Add some padding to the section */
+        }
+
+        .hidden {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200">
+    <!-- Navigation bar -->
+
+    <nav
+        class="navigation sticky top-0  bg-gradient-to-l from-blue-200 via-blue-50 to-blue-200 ">
+        <div class="flex flex-col lg:flex-row lg:justify-around items-center p-2 space-y-2 shadow-md z-50">
+            <!-- Logo and name -->
+            <div
+                class="upashaya text-blue-900 text-2xl font-extrabold flex flex-row items-center space-y-4 mb-4 lg:mb-0">
+                <img src="" alt="">
+                <img src="images/favicon.png" alt="Upashaya" class="w-12 h-10">
+                <h1>Upashaya</h1>
+            </div>
+
+            <!-- Navigation bar list items -->
+            <div
+                class="nav-items text-blue-950 flex flex-row items-center space-x-4 lg:space-y-0 lg:flex-row lg:space-x-7  lg:mb-0">
+                <a href=""></a>
+                <a href="#home" class="list-items font-bold">Home</a>
+                <a href="#about" class="list-items font-bold">About</a>
+                <a href="#features" class="list-items font-bold">Features</a>
+                <a href="#plans" class="list-items font-bold">Our Plans</a>
+                <a href="#join" class="list-items font-bold">Join</a>
+            </div>
+
+            <!-- Navigation bar icons  -->
+            <div
+                class="icons flex-col items-center space-y-4 lg:space-y-0 lg:flex-row lg:space-x-5 mt-2 lg:mt-0 hidden lg:flex">
+                <img src="" alt="">
+                <img src="images/Test Account.png" class="w-10 h-12" alt="Test Account">
+                <img src="images/Trolley.png" class="w-10 h-12" alt="Trolley">
+                <img src="images/Search.png" class="w-10 h-12" alt="Search">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+
+    <section class="Home-section" id="home">
+        <div class="h-screen lg:bg-blue-300 flex justify-center items-center rounded-3xl">
+            <div class="container mx-auto flex flex-col-reverse lg:flex-row justify-between items-center">
+                <!-- The introduction -->
+                <div class="space-y-7 flex flex-col justify-center items-center lg:items-start lg:ml-7">
+                    <h1 class="heading text-4xl md:text-6xl lg:text-7xl text-blue-900 font-bold text-left lg:text-left">
+                        Upashaya - A Medical Record Keeping System</h1>
+                    <h1 class="text-2xl text-blue-900 font-semibold text-left lg:text-left">Using Blockchain and AI
+                        Chatbot</h1>
+                    <div class="flex flex-col md:flex-row md:space-x-5">
+                        <button class="font-semibold bg-white text-2xl text-center p-3 mb-4 rounded-full lg:w-96">What
+                            are
+                            you looking for?</button>
+                        <input class="font-semibold bg-white text-2xl text-center p-3 mb-4 rounded-full w-44 md:w-auto"
+                            type="text" placeholder="Search">
+                    </div>
+                </div>
+
+                <!-- Home page image -->
+                <div class="home-img flex justify-center items-center w-full lg:w-1/2 lg:mr-9 lg:ml-3 mb-4 lg:mb-0">
+                    <img src="images/Frame 5.png" alt="Home Image" class="rounded-3xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about-section  flex flex-col bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 p-4"
+        id="about">
+        <!-- About section description -->
+        <div
+            class="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between p-6 w-full max-w-7xl mx-auto rounded-2xl space-y-4 lg:space-y-0">
+
+            <!-- About section image -->
+            <div class="flex flex-col lg:w-1/2 lg:mr-6 mb-4 lg:mb-0">
+                <img src="images/Rectangle 14 (2).png" alt="About Image" class="w-full h-auto rounded-lg object-cover">
+            </div>
+
+            <!-- About section text -->
+            <div class="flex flex-col lg:w-1/2 space-y-7">
+                <h1 class="font-bold text-4xl lg:text-6xl text-blue-900 text-center lg:text-left">About Us</h1>
+                <p class="text-sm lg:text-xl font-semibold text-blue-900 text-center lg:text-left">
+                    The objective of this project is to develop an advanced Health Monitoring System that
+                    utilizes blockchain technology for secure data management and an AI chatbot for personalized
+                    healthcare interactions. By combining these technologies, the system aims to enhance data
+                    privacy, security, and patient engagement while providing real-time health monitoring and
+                    support.
+                </p>
+
+                <div
+                    class="wrapper grid grid-cols-1 lg:grid-cols-2 gap-4 text-blue-900 font-semibold text-sm lg:text-xl">
+                    <div>
+                        <ul class="about-list space-y-4">
+                            <li class="about-item flex items-center" data-reveal="left">
+                                <ion-icon name="checkmark-circle-outline" class="mr-2"></ion-icon>
+                                <span class="span">Blockchain Technology</span>
+                            </li>
+                            <li class="about-item flex items-center" data-reveal="left">
+                                <ion-icon name="checkmark-circle-outline" class="mr-2"></ion-icon>
+                                <span class="span">AI Chatbot</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="about-list space-y-4">
+                            <li class="about-item flex items-center" data-reveal="left">
+                                <ion-icon name="checkmark-circle-outline" class="mr-2"></ion-icon>
+                                <span class="span">Health Insurance</span>
+                            </li>
+                            <li class="about-item flex items-center" data-reveal="left">
+                                <ion-icon name="checkmark-circle-outline" class="mr-2"></ion-icon>
+                                <span class="span">User Interface Design</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Uncomment this part if needed
+            <div class="flex justify-center lg:justify-start">
+                <button class="btn bg-blue-900 text-white font-semibold text-xs lg:text-xl px-6 py-3 rounded-full">Know More</button>
+            </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section bg-gray-100 py-16 px-4" id="features">
+    <div class="">
+        <div class="text-center  mb-8">
+            <h1 class="text-4xl lg:text-6xl font-bold text-blue-900">Our Features</h1>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Blockchain Technology -->
+            <div
+                class="flex justify-center items-center flex-col bg-gradient-to-b from-blue-200 via-blue-300 to-blue-400 p-4 h-96  rounded-2xl">
+                <h1 class="text-center font-bold text-xl lg:text-2xl text-blue-900">Blockchain Technology</h1>
+                <img src="images/Blockchain Grid.png" alt="Blockchain Technology" class="h-20 w-20">
+                <p class="font-semibold text-base lg:text-xl text-blue-900 text-left">
+                    It helps to keep the Data of Medication and Tests and results. Also, we have used Ethereum
+                    Blockchain to integrate blockchain.
+                </p>
+            </div>
+
+            <!-- Hardware Integration -->
+            <div
+                class="flex justify-center items-center flex-col bg-gradient-to-b from-blue-200 via-blue-300 to-blue-400 p-4 h-96 rounded-2xl">
+                <h1 class="text-center font-bold text-xl lg:text-2xl text-blue-900">Hardware Integration</h1>
+                <img src="images/Technology.png" alt="Hardware Integration" class="h-20 w-20">
+                <p class="font-semibold text-base lg:text-xl text-blue-900 text-left">
+                    Hardware is also integrated so that basic test data can not be falsified but the authority.
+                </p>
+            </div>
+
+            <!-- AI Chatbot -->
+            <div
+                class="flex justify-center items-center flex-col bg-gradient-to-b from-blue-200 via-blue-300 to-blue-400 p-4 h-96 rounded-2xl">
+                <h1 class="text-center font-bold text-xl lg:text-2xl text-blue-900">AI Chatbot(Tri-Netra)</h1>
+                <img src="images/Chatbot.png" alt="AI Chatbot" class="h-20 w-20">
+                <p class="font-semibold text-base lg:text-xl text-blue-900 text-left">
+                    It gives a basic overview of answers to the frequently asked questions.
+                </p>
+            </div>
+
+            <!-- Doctor Appointment -->
+            <div
+                class="flex justify-center items-center flex-col bg-gradient-to-b from-blue-200 via-blue-300 to-blue-400 p-4 h-96 rounded-2xl">
+                <h1 class="text-center font-bold text-xl lg:text-2xl text-blue-900">Doctor Appointment</h1>
+                <img src="images/Doctor Male.png" alt="Doctor Appointment" class="h-20 w-20">
+                <p class="font-semibold text-base lg:text-xl text-blue-900 text-left">
+                    Book an appointment with the doctor with hassle-free procedures.
+                </p>
+            </div>
+
+            <!-- Inventory -->
+            <div
+                class="flex justify-center items-center flex-col bg-gradient-to-b from-blue-200 via-blue-300 to-blue-400 p-4 h-96 rounded-2xl">
+                <h1 class="text-center font-bold text-xl lg:text-2xl text-blue-900">Inventory</h1>
+                <img src="images/Warehouse.png" alt="Inventory" class="h-20 w-20">
+                <p class="font-semibold text-base lg:text-xl text-blue-900 text-left">
+                    Gives the current fee of the equipment and medicines needed for a Surgery.
+                </p>
+            </div>
+            <!-- Inventory -->
+            <div
+                class="flex justify-center items-center flex-col bg-gradient-to-b from-blue-200 via-blue-300 to-blue-400 p-4 h-96 rounded-2xl">
+                <h1 class="text-center font-bold text-xl lg:text-2xl text-blue-900">Insurance</h1>
+                <img src="images/Protect (1).png" alt="Inventory" class="h-20 w-20">
+                <p class="font-semibold text-base lg:text-xl text-blue-900 text-left">
+                   Choose your insurance plan from us with minimal charges. Choose the best plans to secure yourself and your family members.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <!-- Plans for your needs -->
+    <section
+        class="plan-section  flex justify-center items-center bg-gradient-to-b from-blue-500 via-blue-300 to-blue-200 py-16"
+        id="plans">
+        <div class="text-center space-y-8">
+            <!-- Heading -->
+            <div class="space-y-2">
+                <h1 class="text-4xl lg:text-6xl font-bold text-white">The Perfect Plan for Your Needs</h1>
+                <h2 class="text-xl lg:text-2xl font-semibold text-white mb-5">Our transparent pricing makes it easy to
+                    find a plan that works within your budget</h2>
+            </div>
+
+            <!-- Plan Boxes -->
+            <div class="grid grid-cols-1 md::grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+
+                <!-- Plan-1 -->
+                <div class="flex flex-col items-center bg-white w-full p-6 rounded-3xl border-4 border-black h-80">
+                    <div class="space-y-1 text-center">
+                        <h3 class="text-2xl font-bold text-blue-900 ">Free</h3>
+                        <p class="text-2xl font-bold text-blue-900">Rs 0/Month</p>
+                    </div>
+                    <div class="lists space-y-4 mt-4">
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">Free Chat</p>
+                        </div>
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">Core Platform Features</p>
+                        </div>
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">All Integrations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan-2 -->
+                <div
+                    class="flex flex-col items-center bg-gradient-to-b from-blue-200 to-blue-300 w-full p-6 rounded-3xl border-4 border-black">
+                    <div class="space-y-1 text-center">
+                        <h3 class="text-2xl font-bold text-blue-900">Grow</h3>
+                        <p class="text-2xl font-bold text-blue-900">Rs 499/Month</p>
+                    </div>
+                    <div class="lists space-y-4 mt-4">
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">Doctor Appointment</p>
+                        </div>
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">Free Chatbot</p>
+                        </div>
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">Record Keeping</p>
+                        </div>
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">Medicine Composition</p>
+                        </div>
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">Inventory & Insurance</p>
+                        </div>
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">Data Milling System</p>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-extrabold bg-blue-800 text-white p-2 rounded-lg mt-4">Recommended</h4>
+                </div>
+
+                <!-- Plan-3 -->
+                <div class="flex flex-col items-center bg-white w-full p-6 rounded-3xl border-4 border-black h-80">
+                    <div class="space-y-1 text-center">
+                        <h3 class="text-2xl font-bold text-blue-900">Scale</h3>
+                        <p class="text-2xl font-bold text-blue-900">Rs 299/Month</p>
+                    </div>
+                    <div class="lists space-y-4 mt-4">
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">Doctor Appointment</p>
+                        </div>
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">Free Chatbot</p>
+                        </div>
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">Record Keeping</p>
+                        </div>
+                        <div class="flex items-center">
+                            <ion-icon name="checkmark-circle-outline" class="mr-2 text-blue-950"></ion-icon>
+                            <p class="text-xl font-bold">All Integrations</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Join us page -->
+    <section class="join  h-screen flex flex-col lg:flex-row" id="join">
+        <!-- First half -->
+        <div class="lg:w-1/3 w-full bg-white h-full flex flex-col border-4 border-blue-950 p-4 lg:p-6">
+            <!-- Logo and Title -->
+            <div class="flex items-center mb-5">
+                <img src="images/favicon.png" alt="Upashaya" class="h-16 lg:h-20">
+                <h1 class="text-xl lg:text-2xl font-bold text-blue-900 ml-4">Upashaya</h1>
+            </div>
+
+            <!-- Steps -->
+            <div class="flex flex-col space-y-6">
+                <!-- Step 1 -->
+                <div class="flex items-center space-x-3">
+                    <img src="images/Customer.png" alt="" class="h-10 lg:h-12">
+                    <div>
+                        <h1 class="text-gray-400 font-bold text-base lg:text-lg">Your Details</h1>
+                        <h2 class="text-gray-400 font-semibold text-sm lg:text-base">Provide an email and password</h2>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex items-center space-x-3">
+                    <img src="images/Email.png" alt="" class="h-10 lg:h-12">
+                    <div>
+                        <h1 class="text-gray-400 font-bold text-base lg:text-lg">Verify Your Email</h1>
+                        <h2 class="text-gray-400 font-semibold text-sm lg:text-base">Enter your verification code</h2>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex items-center space-x-3">
+                    <img src="images/Rocket.png" alt="" class="h-10 lg:h-12">
+                    <div>
+                        <h1 class="text-black font-bold text-base lg:text-lg">Welcome to Upashaya</h1>
+                        <h2 class="text-gray-600 font-semibold text-sm lg:text-base">Get up and running in 3 minutes
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image at the bottom -->
+            <div class="mt-auto flex justify-center items-center w-full">
+                <img src="images/Organ Transplantation.png" alt="" class="w-52 h-44">
+            </div>
+
+            <!-- Login or Back link -->
+            <div class="flex justify-between mt-5">
+                <div class="flex items-center space-x-2">
+                    <ion-icon name="arrow-back-outline" class="text-gray-600 text-lg"></ion-icon>
+                    <a href="home" class="text-gray-600 text-base lg:text-xl font-bold">Back to Home</a>
+                </div>
+                <a href="" class="text-gray-600 text-base lg:text-xl font-bold">Login</a>
+            </div>
+        </div>
+
+        <!-- Second half -->
+        <div
+            class="lg:w-2/3 w-full h-full flex flex-col items-center justify-center p-4 lg:p-8 bg-gradient-to-b from-blue-500 via-blue-300 to-blue-200">
+            <div class="flex flex-col items-center">
+                <img src="images/favicon.png" alt="" class="h-16 lg:h-24 mb-4">
+                <h1 class="text-xl lg:text-4xl font-bold text-white mb-2">Thank You for Visiting!</h1>
+                <h2 class="text-base lg:text-2xl font-bold text-gray-700">Get up and running in 3 minutes</h2>
+
+                <div class="flex flex-col items-center mt-8 space-y-6">
+                    <img src="images/loginpage.png" alt="" class="h-72 lg:h-96 w-auto">
+                    <h1 class="text-black bg-white text-xl lg:text-2xl font-bold text-center p-4 rounded-lg">Finish Up
+                    </h1>
+                </div>
+            </div>
+        </div>
+       
+    </section>
+   <!-- Footer section with social media icons and newsletter sign-up -->
+<footer class="flex flex-col items-center bg-gradient-to-t from-blue-500 via-blue-300 to-blue-200  text-center text-surface  dark:text-blue-950 mt-96 md:mt-0">
+    <div class="container px-6 pt-6">
+      <!-- Social media icons container -->
+      <div class="mb-6 flex justify-center space-x-2">
+        <!-- Example social media icon -->
+        <a href="#!" type="button" class="rounded-full bg-white p-3 uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 dark:text-white" data-twe-ripple-init data-twe-ripple-color="light">
+          <span class="[&>svg]:h-5 [&>svg]:w-5">
+            <!-- Add your SVG icon here -->
+          </span>
+        </a>
+        <!-- Repeat the above block for other social media icons -->
+      </div>
+  
+      <!-- Newsletter sign-up form -->
+      <div>
+        <form action="">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center">
+            <div class="md:mb-6 md:ms-auto">
+              <p><strong>Sign up for our newsletter</strong></p>
+            </div>
+  
+            <!-- Newsletter sign-up input field -->
+            <div class="relative md:mb-6 border-4 border-blue-950 rounded-md" data-twe-input-wrapper-init>
+              <input type="email" id="exampleFormControlInputEmail" placeholder="Email address" class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-blue-950 dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill dark:peer-focus:text-primary [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0" />
+              <label for="exampleFormControlInputEmail" class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-blue-900 dark:peer-focus:text-primary ">Email address</label>
+            </div>
+  
+            <!-- Newsletter sign-up submit button -->
+            <div class="mb-6 md:me-auto">
+              <button type="submit" class="inline-block rounded px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-surface shadow-dark-3 shadow-black/30 transition duration-150 ease-in-out hover:shadow-dark-1 focus:shadow-dark-1 focus:outline-none focus:ring-0 active:shadow-1 bg-blue-900 text-white" data-twe-ripple-init data-twe-ripple-color="light">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Links section -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
+        <div class="mb-6">
+          <h5 class="mb-2.5 font-bold uppercase">Legal</h5>
+          <ul class="mb-0 list-none">
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!"> Terms and Condition</a></li>
+            <li><a href="#!">How it Works</a></li>
+            <li><a href="#!">Our Services</a></li>
+          </ul>
+        </div>
+  
+        <div class="mb-6 text-left">
+          <h5 class="mb-2.5 font-bold uppercase">Contact Us</h5>
+          <ul class="mb-0 list-none " >
+            <li><a href="#!">Email: contact@gmail.com</a></li>
+            <li><a href="#!">Telephone: 23456778</a></li>
+          </ul>
+        </div>
+  
+       
+      </div>
+    </div>
+  
+    <!-- Copyright section -->
+    <div class="w-full bg-black/5 p-4 text-center">
+      © 2024 Copyright:
+      <a class="font-semibold" href="https://tw-elements.com/">Upashaya</a>
+    </div>
+  </footer>
+  
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</html>
